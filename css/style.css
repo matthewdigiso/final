@@ -1,0 +1,219 @@
+/* Example CSS */
+
+/* General styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #141414;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .navbar ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #10C9C3;
+  }
+  
+  /* Home section styles */
+  #home {
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 250px 0;
+  }
+  
+  #home h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #10C9C3;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0E948B;
+  }
+  
+  /* About section styles */
+  #about {
+    background-color: #F5F5F5;
+    color: #141414;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .signature {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  /* Professional Skills section styles */
+  #professional-skills {
+    background-color: #FFFFFF;
+    color: #141414;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  
+  .progress-bar {
+    background-color: #E0E0E0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #10C9C3;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .skill {
+      width: 100%;
+    }
+  }
+  
+  /* Image section styles */
+  #image-section {
+    background-color: #FFFFFF;
+    color: #141414;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* packages */
+  /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .column {
+    flex-basis: 48%; /* Adjust width of columns */
+    position: relative; /* Positioning for overlay */
+  }
+  
+  .column img {
+    width: 100%;
+    display: block;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow effect */
+  }
+  
+  .column .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 201, 195, 0.8); /* Overlay background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px; /* Match image border-radius */
+  }
+  
+  .column .image-overlay:hover {
+    opacity: 1;
+  }
+  
+  .column .image-overlay a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Button background color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .column .image-overlay a:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Button hover background color */
+  }
+  
